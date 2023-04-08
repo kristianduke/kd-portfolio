@@ -6,7 +6,7 @@
 .page-title{
     align-content: center;
     text-align: center;
-    font-family: "JetBrains Mono", sans-serif;
+    font-family: "JetBrains Mono", monospace;
 }
 
 .gallerySwiper{

@@ -1,6 +1,6 @@
 .post-title {
     color: var(--foreground-colour);
-    font-family: "JetBrains Mono", sans-serif;
+    font-family: "JetBrains Mono", monospace;
     display: inline;
 }
 
