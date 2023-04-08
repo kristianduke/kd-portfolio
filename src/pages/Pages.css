@@ -1,0 +1,33 @@
+.page{
+    width: 60%;
+    margin: auto;
+}
+
+.page-title{
+    align-content: center;
+    text-align: center;
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+.gallerySwiper{
+    color: var(--background-text-color);
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+    .page{
+        width: 90%
+    }
+}

@@ -1,0 +1,78 @@
+:root{
+    /* Main Colours */
+    --background-colour: #242331;
+    --secondary-background-colour: #343348;
+    --foreground-colour: #F24333;
+    --text-colour: white;
+    --background-text-color: darkgrey;
+
+    /* Swiper */
+    --swiper-theme-color: var(--text-colour);
+    --swiper-navigation-color: var(--foreground-colour);
+    --swiper-pagination-color: var(--foreground-colour);
+
+
+    color: var(--text-colour);
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-colour);
+    margin: 0;
+
+    height: 100vh;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+#mobile{
+    display: none;
+}
+
+/* Dividers */
+hr.solid {
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 1px;
+    border-color: var(--foreground-colour);
+    margin: 10px 0 10px 0;
+    width: 100%;
+}
+
+hr.secondary {
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 1px;
+    border-color: var(--secondary-background-colour);
+    margin: 10px 0 10px 0;
+    width: 100%;
+}
+
+hr.dashed {
+    border-style: dashed;
+    border-width: 0;
+    border-top-width: 1px;
+    border-color: var(--foreground-colour);
+    width: 80%;
+    margin: 5%;
+}
+
+
+/* Mobile Devices */
+@media screen and (max-width: 600px){
+    #mobile{
+        display: block;
+    }
+}
+
+@media not screen and (max-width: 900px){
+    .content{
+        margin: 0 0 0 0;
+    }
+}

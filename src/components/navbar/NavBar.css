@@ -1,0 +1,97 @@
+.nav-bar{
+    display: block;
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-color: var(--secondary-background-colour);
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+
+.nav-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1% 0;
+    background-color: var(--background-colour);
+    opacity: 1;
+
+    background-image:  repeating-linear-gradient(45deg, var(--secondary-background-colour) 25%, transparent 25%, transparent 75%, var(--secondary-background-colour) 75%, var(--secondary-background-colour)), repeating-linear-gradient(45deg, var(--secondary-background-colour) 25%, var(--background-colour) 25%, var(--background-colour) 75%, var(--secondary-background-colour) 75%, var(--secondary-background-colour));
+    background-position: 0 0, 8px 8px;
+    background-size: 16px 16px;
+}
+
+
+.nav-elements{
+    list-style: none;
+    font-weight: 100;
+    font-size: 1em;
+    color: var(--text-colour);
+    padding: 10px;
+}
+
+.nav-elements > li{
+    display: inline-block;
+    margin: 5px 5px;
+    white-space: nowrap;
+
+    text-align: center;
+
+    width: 100px;
+
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-color: transparent;
+}
+
+.nav-elements > li:hover{
+    cursor: pointer;
+}
+
+.nav-elements > li > a{
+    text-decoration: none;
+}
+
+.nav-title > span{
+    font-weight: 100;
+}
+
+.nav-link{
+    width: 100%;
+    height: 100%;
+
+    text-decoration: none;
+    color: var(--text-colour);
+}
+
+.icon-container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon-container > div {
+    padding: 5px;}
+
+.icon-container > div > a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.icon-container > div > a:hover{
+    color: var(--foreground-colour)
+}
+
+
+/* Mobile Device */
+@media screen and (max-width: 600px) {
+    nav > .nav-content{
+        justify-content: center;
+    }
+
+    .nav-content > .icon-container{
+        display: none;
+    }
+}

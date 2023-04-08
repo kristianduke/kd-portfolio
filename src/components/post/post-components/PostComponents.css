@@ -1,0 +1,12 @@
+.imageDescriptionContainer{
+    display: grid;
+}
+
+.imageDescriptionImage{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.imageDescriptionImageDescription{
+
+}

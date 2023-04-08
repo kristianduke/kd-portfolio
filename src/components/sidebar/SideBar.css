@@ -1,0 +1,32 @@
+.sidebar{
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    margin: 0;
+
+    overflow: clip;
+
+    background-color: var(--secondary-background-colour);
+    background-size: 12px 12px;
+    background-image: repeating-linear-gradient(45deg, var(--secondary-background-colour) 0, var(--secondary-background-colour) 1px, var(--background-colour) 0, var(--background-colour) 50%);
+
+    border-style: solid;
+    border-color: var(--secondary-background-colour);
+    border-width: 0;
+    border-right-width: 1px;
+}
+
+#footer{
+    display: flex;
+    position: absolute;
+    vertical-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 900px) {
+    .sidebar{
+        display: none;
+    }
+}
