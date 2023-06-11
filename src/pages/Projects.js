@@ -19,7 +19,6 @@ import FCSImageShooting from '../resources/posts/FCS/FCS_Shooting.png';
 
 import Inventory01 from '../resources/posts/IGS/Inventory01.png'
 import Inventory02 from '../resources/posts/IGS/Inventory02.png'
-import Inventory03 from '../resources/posts/IGS/Inventory03.png'
 
 import Prototype01 from '../resources/posts/GD/Prototype01.png'
 import GDGameplay01 from '../resources/posts/GD/Gameplay01.png'
@@ -32,25 +31,22 @@ function Projects() {
         <div className="page">
             <Post title={"Grid Inventory System"} icon={"fa-brands fa-unity"} date={"16 December 2022"} github={"https://github.com/HitboxSoftware/grid-inventory-system"}>
                 <div>
-                    Grid inventory system inspired by games like Escape from Tarkov and DayZ, it was originally
-                    created for a survival game I was working on, however I realised that this system would be far more useful
-                    as a package that could be imported into new projects. The system is split into 2 parts, a kind
-                    of backend / frontend arrangement where the backend handles storing and saving items as well as
-                    utilities to help manage the grid like adding, removing and dealing with rotation. The
-                    frontend manages player interaction, allowing for the player to move items around the inventory
-                    and updating the backend with any changes made. This arrangement helps to make the system more
-                    reusable and modular, allowing for different kinds of inventories to be made without needing to
-                    change the back-end, it's also easier for serialisation since the grid is contained within a single
-                    class not linked to any MonoBehaviour components.
+                    Grid Inventory System inspired by games such as Escape from Tarkov and DayZ, I started working
+                    on this after needing one for a new game I was developing and realised it would be great
+                    as a standalone module that could easily be implemented in new projects. The system is split into
+                    3 parts: Core, Data and UI. The Core of the system is essentially the backend and handles
+                    creating and removing items as well as serialisation. The core does not make use of any Unity
+                    MonoBehaviour components. Data manages the Item definitions and uses Unity's ScriptableObject system for
+                    easy creation of new item types. Finally the UI simply reads from the backend Core and generates MonoBehaviour
+                    components accordingly on top of dealing with all of user interaction for the system.
                 </div>
                 <h3>Gallery</h3>
                 <Swiper grabCursor={true} navigation={true} modules={[Navigation]} className="gallerySwiper">
                     <SwiperSlide><img src={Inventory01} alt={"Inventory 01"}/>Inventory</SwiperSlide>
                     <SwiperSlide><img src={Inventory02} alt={"Inventory 02"}/>Context Menu</SwiperSlide>
-                    <SwiperSlide><img src={Inventory03} alt={"Inventory 03"}/>Opened Container</SwiperSlide>
                 </Swiper>
             </Post>
-            <Post title={"Firearm Component System"} icon={"fa-brands fa-unity"} date={"29 January 2023"}>
+            <Post title={"Firearm Component System"} icon={"fa-brands fa-unity"} date={"29 January 2023"} github={"https://github.com/HitboxSoftware/firearm-component-system"}>
                 <h3>Overview</h3>
                 <div>
                     Firearm Modification System allowing for in-depth weapon customisation using a node-based approach.

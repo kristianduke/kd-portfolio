@@ -31,17 +31,17 @@ const NavBar = ({children}) => {
                 <div className="icon-container">
                     <div>
                         <a href="https://github.com/kristianduke" target={"_blank"} rel={"noreferrer"}>
-                            <i className="fa-brands fa-github fa-2xl"></i>
+                            <motion.i whileHover={{scale: 1.2}} whileTap={{scale:0.95}} className="fa-brands fa-github fa-2xl"></motion.i>
                         </a>
                     </div>
                     <div>
                         <a href="https://www.linkedin.com/in/kristian-duke/" target={"_blank"} rel={"noreferrer"}>
-                            <i className="fa-brands fa-linkedin fa-2xl"></i>
+                            <motion.i whileHover={{scale: 1.2}} whileTap={{scale:0.95}} className="fa-brands fa-linkedin fa-2xl"></motion.i>
                         </a>
                     </div>
                     <div>
                         <a href="mailto: contact@kristianduke.me">
-                            <i className="fa-solid fa-envelope fa-2xl"></i>
+                            <motion.i whileHover={{scale: 1.2}} whileTap={{scale:0.95}} className="fa-solid fa-envelope fa-2xl"></motion.i>
                         </a>
                     </div>
                 </div>
