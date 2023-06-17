@@ -1,1 +1,1 @@
-Website built with react to hold my projects.
+Website built with react to showcase any projects i've created.
